@@ -32,7 +32,6 @@ def ecsign(rawhash, key):
 import requests
 
 g_addr_file_path = './htdf_addr.txt'
-# g_node_ip_port = '120.24.55.54:1317'   #节点ip和端口
 g_node_ip_port = 'test01.orientwalt.cn:1317'   #节点ip和端口
 
 g_strFrom = 'htdf1jrh6kxrcr0fd8gfgdwna8yyr9tkt99ggmz9ja2'
