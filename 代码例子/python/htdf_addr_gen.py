@@ -150,7 +150,6 @@ g_nMinPrivKey = 0x00000000000000000000000000000000000000000000000000000000000000
 
 def GenPrivKey():
     '''
-
     生成私钥, 使用 os.urandom (底层使用了操作系统的随机函数接口, 取决于CPU的性能,各种的硬件的数据指标)
     :return:私钥(16进制编码)
     '''
@@ -189,7 +188,6 @@ def PrivKeyToPubKeyCompress(privKey):
 def PubKeyToAddr( pubKey,  hrp='htdf'):
     '''
     公钥-->地址
-
     :param pubKey:  (压缩格式公钥)
     :param hrp:     (地址前缀)
     :return:
@@ -219,6 +217,7 @@ def GenAddr(hrp = 'htdf'):
 
     #公钥-->地址
     addr = PubKeyToAddr(pubKey, hrp)
+
     return str(privKey),  str(pubKey), str(addr)
 
 
