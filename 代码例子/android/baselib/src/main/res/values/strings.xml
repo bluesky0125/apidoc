@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="setting_language_auto">follow the system</string>
+        
+    <string name="setting_language_english">English</string>
+        
+    <string name="setting_simplified_chinese">Simplified Chinese</string>
+        
+    <string name="setting_traditional_chinese">Traditional Chinese</string>
+
+        <!--update-->
+        
+    <string name="update_cancel_load"> cancel download </string>
+        
+    <string name="update_dialog_title">OK download?</string>
+        
+    <string name="update_dialog_msg">Do not download under wifi will generate traffic\n download?</string>
+        
+    <string name="update_dialog_cancel">Cancel </string>
+        
+    <string name="update_dialog_commit">Sure </string>
+        
+    <string name="update_title">Are you upgrading to the %s version? </string>
+        
+    <string name="update_tig">Please authorize access to storage space permissions, otherwise the app cannot be updated </string>
+        
+    <string name="update_size">new version size: %s\n\n</string>
+        
+    <string name="update_f_title">version update</string>
+        
+    <string name="update_f_btn">Upgrade now</string>
+        
+    <string name="update_f_btn2">Ignore this version </string>
+        
+    <string name="update_f_msg">Are you upgrading to version 4.1.1? </string>
+    <string name="update_install">install</string>
+    <string name="scan_no_result">No two-dimensional code was found</string>
+    <string name="scan_no_result2">Recognition of Two-Dimensional Code Failure</string>
+    <string name="scan_photo">Album</string>
+    <string name="error_gif">error gif</string>
+
+    <string name="check_version">No new version found</string>
+
+    <string name="empty_word">Please enter mnemonics</string>
+    <string name="err_10000">参数错误</string>
+    <string name="err_10001">签名错误</string>
+    <string name="err_10002">付款码错误</string>
+    <string name="err_10003">该币种还未开通</string>
+    <string name="err_10004">付款码无效</string>
+    <string name="err_10005">付款码已过期</string>
+    <string name="err_10006">付款码已失效</string>
+    <string name="err_10007">请先绑定钱包</string>
+    <string name="err_10008">用户不存在</string>
+    <string name="err_10009">同一账户不能转账</string>
+    <string name="err_10010">请先成为商户后进行扫码</string>
+    <string name="err_10011">请先设置支付密码</string>
+    <string name="err_10012">ERROR</string>
+    <string name="err_10013">生成订单失败</string>
+    <string name="err_10014">内部错误</string>
+    <string name="err_10015">付款方余额不足</string>
+    <string name="err_10016">币种无效</string>
+    <string name="err_10017">请求已过期</string>
+    <string name="err_10018">订单未完成</string>
+    <string name="err_10019">邮箱已存在</string>
+    <string name="err_10020">激活码处于有效期</string>
+    <string name="err_10021">激活码无失效</string>
+    <string name="err_10022">激活码已过期</string>
+    <string name="err_10023">两次密码不一致</string>
+    <string name="err_10024">邮箱未注册</string>
+    <string name="err_10025">账号或密码有误</string>
+    <string name="err_10026">请先开启付款功能</string>
+    <string name="err_10027">数额错误</string>
+    <string name="err_10028">令牌无效</string>
+    <string name="err_10029">订单无效</string>
+    <string name="err_10030">支付密码错误</string>
+    <string name="err_10031">暂无数据</string>
+    <string name="err_10032">文件无效</string>
+    <string name="err_10033">原密码不正确</string>
+    <string name="err_10034">钱包已被绑定</string>
+    <string name="err_10035">钱包不存在</string>
+</resources>
