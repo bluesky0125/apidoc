@@ -43,22 +43,5 @@ app.post('/hs/broadcast', (req, res) => {
   })
 })
 
-// request({
-// url: ipAndProt + '/hs/createWithtest',
-// method: 'post',
-// body: JSON.parse(params),
-// json: true
-// }, (err, res, body) => {
-// console.log(body)
-// let resJsonStr = atob(body)
-// // console.log(resJsonStr)
-// let resJsonBuffer = Buffer.from(resJsonStr)
-// console.log(resJsonBuffer)
-// const hax = ethereumjsUtil1.sha256(resJsonBuffer)
-// let signB = ethereumjsUtil1.ecsign(hax, g_privateKey)
-// let sign64 = Buffer.concat([signB.r, signB.s])
-// bytetostr = btoa(uint8ToStr(sign64))
-// })
-
 console.log('server listen on port 3000')
 app.listen(3000)
