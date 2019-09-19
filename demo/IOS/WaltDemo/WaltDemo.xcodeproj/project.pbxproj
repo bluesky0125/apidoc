@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		181A7951232F660500FFC5C0 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A7950232F660500FFC5C0 /* Network.swift */; };
+		181A7953232F6D6D00FFC5C0 /* WaltModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181A7952232F6D6D00FFC5C0 /* WaltModel.swift */; };
+		185F42E7232F761700FEF24E /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F42E6232F761700FEF24E /* TransferViewController.swift */; };
+		185F42E9232F7F2800FEF24E /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F42E8232F7F2800FEF24E /* Tool.swift */; };
+		185F42EC232F804500FEF24E /* Secp256k1Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185F42EB232F804500FEF24E /* Secp256k1Swift.swift */; };
+		1867BE7B232F63C100086EDA /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867BE7A232F63C100086EDA /* HttpManager.swift */; };
+		18769ADE232F235D009C0BDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18769ADD232F235D009C0BDE /* AppDelegate.swift */; };
+		18769AE0232F235D009C0BDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18769ADF232F235D009C0BDE /* ViewController.swift */; };
+		18769AE3232F235D009C0BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18769AE1232F235D009C0BDE /* Main.storyboard */; };
+		18769AE5232F235E009C0BDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18769AE4232F235E009C0BDE /* Assets.xcassets */; };
+		18769AE8232F235E009C0BDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18769AE6232F235E009C0BDE /* LaunchScreen.storyboard */; };
+		18769AF0232F3E95009C0BDE /* WalletsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18769AEF232F3E95009C0BDE /* WalletsManager.swift */; };
+		E93B276B3709719B3CDB2249 /* Pods_WaltDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D268420401C275730F81030E /* Pods_WaltDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		181A7950232F660500FFC5C0 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		181A7952232F6D6D00FFC5C0 /* WaltModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaltModel.swift; sourceTree = "<group>"; };
+		185F42E6232F761700FEF24E /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
+		185F42E8232F7F2800FEF24E /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
+		185F42EB232F804500FEF24E /* Secp256k1Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secp256k1Swift.swift; sourceTree = "<group>"; };
+		1867BE7A232F63C100086EDA /* HttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
+		18769ADA232F235D009C0BDE /* WaltDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaltDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18769ADD232F235D009C0BDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18769ADF232F235D009C0BDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18769AE2232F235D009C0BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18769AE4232F235E009C0BDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18769AE7232F235E009C0BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18769AE9232F235E009C0BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18769AEF232F3E95009C0BDE /* WalletsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsManager.swift; sourceTree = "<group>"; };
+		71E8ACBF6EE3852F71F6ED43 /* Pods-WaltDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaltDemo.debug.xcconfig"; path = "Target Support Files/Pods-WaltDemo/Pods-WaltDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D268420401C275730F81030E /* Pods_WaltDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaltDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDAF6E7DC4AB22E6C4545D38 /* Pods-WaltDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaltDemo.release.xcconfig"; path = "Target Support Files/Pods-WaltDemo/Pods-WaltDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18769AD7232F235D009C0BDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E93B276B3709719B3CDB2249 /* Pods_WaltDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		185F42EA232F804500FEF24E /* Secp256k1Swift */ = {
+			isa = PBXGroup;
+			children = (
+				185F42EB232F804500FEF24E /* Secp256k1Swift.swift */,
+			);
+			path = Secp256k1Swift;
+			sourceTree = "<group>";
+		};
+		18769AD1232F235D009C0BDE = {
+			isa = PBXGroup;
+			children = (
+				18769ADC232F235D009C0BDE /* WaltDemo */,
+				18769ADB232F235D009C0BDE /* Products */,
+				CE24755F39CD4F10BE38A475 /* Pods */,
+				3913C4073B0FAD9E70BABC43 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18769ADB232F235D009C0BDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18769ADA232F235D009C0BDE /* WaltDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18769ADC232F235D009C0BDE /* WaltDemo */ = {
+			isa = PBXGroup;
+			children = (
+				185F42EA232F804500FEF24E /* Secp256k1Swift */,
+				18769AEF232F3E95009C0BDE /* WalletsManager.swift */,
+				1867BE7A232F63C100086EDA /* HttpManager.swift */,
+				181A7952232F6D6D00FFC5C0 /* WaltModel.swift */,
+				181A7950232F660500FFC5C0 /* Network.swift */,
+				18769ADD232F235D009C0BDE /* AppDelegate.swift */,
+				18769ADF232F235D009C0BDE /* ViewController.swift */,
+				185F42E6232F761700FEF24E /* TransferViewController.swift */,
+				185F42E8232F7F2800FEF24E /* Tool.swift */,
+				18769AE1232F235D009C0BDE /* Main.storyboard */,
+				18769AE4232F235E009C0BDE /* Assets.xcassets */,
+				18769AE6232F235E009C0BDE /* LaunchScreen.storyboard */,
+				18769AE9232F235E009C0BDE /* Info.plist */,
+			);
+			path = WaltDemo;
+			sourceTree = "<group>";
+		};
+		3913C4073B0FAD9E70BABC43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D268420401C275730F81030E /* Pods_WaltDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE24755F39CD4F10BE38A475 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71E8ACBF6EE3852F71F6ED43 /* Pods-WaltDemo.debug.xcconfig */,
+				DDAF6E7DC4AB22E6C4545D38 /* Pods-WaltDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18769AD9232F235D009C0BDE /* WaltDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18769AEC232F235E009C0BDE /* Build configuration list for PBXNativeTarget "WaltDemo" */;
+			buildPhases = (
+				0E2091FF86FD1AC01D1897DB /* [CP] Check Pods Manifest.lock */,
+				18769AD6232F235D009C0BDE /* Sources */,
+				18769AD7232F235D009C0BDE /* Frameworks */,
+				18769AD8232F235D009C0BDE /* Resources */,
+				50A39199583FDBCA3A41B1D9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaltDemo;
+			productName = WaltDemo;
+			productReference = 18769ADA232F235D009C0BDE /* WaltDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18769AD2232F235D009C0BDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "yiqilai company";
+				TargetAttributes = {
+					18769AD9232F235D009C0BDE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 18769AD5232F235D009C0BDE /* Build configuration list for PBXProject "WaltDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18769AD1232F235D009C0BDE;
+			productRefGroup = 18769ADB232F235D009C0BDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18769AD9232F235D009C0BDE /* WaltDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18769AD8232F235D009C0BDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18769AE8232F235E009C0BDE /* LaunchScreen.storyboard in Resources */,
+				18769AE5232F235E009C0BDE /* Assets.xcassets in Resources */,
+				18769AE3232F235D009C0BDE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E2091FF86FD1AC01D1897DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaltDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50A39199583FDBCA3A41B1D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaltDemo/Pods-WaltDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaltDemo/Pods-WaltDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WaltDemo/Pods-WaltDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18769AD6232F235D009C0BDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				181A7951232F660500FFC5C0 /* Network.swift in Sources */,
+				185F42E7232F761700FEF24E /* TransferViewController.swift in Sources */,
+				18769AE0232F235D009C0BDE /* ViewController.swift in Sources */,
+				185F42EC232F804500FEF24E /* Secp256k1Swift.swift in Sources */,
+				185F42E9232F7F2800FEF24E /* Tool.swift in Sources */,
+				18769AF0232F3E95009C0BDE /* WalletsManager.swift in Sources */,
+				181A7953232F6D6D00FFC5C0 /* WaltModel.swift in Sources */,
+				18769ADE232F235D009C0BDE /* AppDelegate.swift in Sources */,
+				1867BE7B232F63C100086EDA /* HttpManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18769AE1232F235D009C0BDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18769AE2232F235D009C0BDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18769AE6232F235E009C0BDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18769AE7232F235E009C0BDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18769AEA232F235E009C0BDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18769AEB232F235E009C0BDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18769AED232F235E009C0BDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71E8ACBF6EE3852F71F6ED43 /* Pods-WaltDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NC93PDT2V;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WaltDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yjy.WaltDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		18769AEE232F235E009C0BDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDAF6E7DC4AB22E6C4545D38 /* Pods-WaltDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NC93PDT2V;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WaltDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yjy.WaltDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18769AD5232F235D009C0BDE /* Build configuration list for PBXProject "WaltDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18769AEA232F235E009C0BDE /* Debug */,
+				18769AEB232F235E009C0BDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18769AEC232F235E009C0BDE /* Build configuration list for PBXNativeTarget "WaltDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18769AED232F235E009C0BDE /* Debug */,
+				18769AEE232F235E009C0BDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18769AD2232F235D009C0BDE /* Project object */;
+}
