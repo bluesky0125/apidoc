@@ -1,6 +1,8 @@
 // 依赖引入
 import axios from 'axios'
 const ethereumjsUtil1 = require('ethereumjs-util')
+const bech32 = require('bech32')
+const RIPEMD160 = require('ripemd160')
 const bitcoinLib = require('bitcoinjs-lib')
 
 // 1、创建合约、合约签名
@@ -51,11 +53,25 @@ const ecsign = (str) => {
   console.log('签名后string:', sign64Str)
   return sign64Str
 }
+/**
+ * pub to address
+ * private:'9900ef98d7e0cab2d0dd70f9594b2e2d89820f6ba9a4b08f698ff8cea135cfe5'
+ * pub: '02969e61c6638ef41e4c21ed6b81c7ad9a1d876fe049eaba2556e0890fcae5d049'
+ * addr:'htdf123e5e37s0rmfcr9akuju3kzu7vt4h2ys5uxkfl'
+ * @param {公钥} pub
+ */
+let pub = '02969e61c6638ef41e4c21ed6b81c7ad9a1d876fe049eaba2556e0890fcae5d049'
+const pubToAddr = (pub) => {
+  let myPublicKey = Buffer.from(pub, 'hex')
+  let publicKey256 = ethereumjsUtil1.sha256(myPublicKey)
+  let publicKey160 = new RIPEMD160().update(publicKey256).digest()
+  let HTDFAddress = bech32.encode('htdf', bech32.toWords(publicKey160))
+  return HTDFAddress
+}
+console.log('pub to address:', pubToAddr(pub))
 
-const handlePrivateKey = (key) => {
+const privateKeyToPub = (key) => {
   if (!key) return
-  // console.log('privateKey:', key)
-  // 私钥buffer
   const privateKeyHex = Buffer.from(
     key,
     'hex'
@@ -65,7 +81,7 @@ const handlePrivateKey = (key) => {
   return window.btoa(uint8ToStr(myPublicKey))
 }
 
-const PUBLICE_KEY = handlePrivateKey(PRIVATE_KEY) // 付款方公钥
+const PUBLICE_KEY = privateKeyToPub(PRIVATE_KEY) // 付款方公钥
 
 /**
  *

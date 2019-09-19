@@ -6,10 +6,10 @@
 
 ``` bash
 # 安装依赖
-npm install && cnpm install
+npm install || cnpm install
 
 # 启动服务
-npm run dev && node src/server/index.js
+node src/server/index.js && npm run dev
 
 # 打包
 npm run build
