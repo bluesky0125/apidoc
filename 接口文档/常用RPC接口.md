@@ -105,6 +105,119 @@ Account #3: {htdf1jduyhyensy5helsezcdpnd8qja5xhgs5cmq5ts}
 Account #4: {htdf1xm9g53mc0m0dyj807h2rtxw3y39zq4z0cs0nde}
 Account #5: {htdf1g9jlhyu07jjm4gfus52l28r29y4m063gmtxcx0}
 ```
+####  查询最新区块
+**方法**：    GET   
+
+**url**：   /blocks/latest
+
+**例子**：  
+
+```
+~$curl http://localhost:1317/blocks/latest
+```
+**返回** :
+{
+  "block_meta": {
+    "block_id": {
+      "hash": "9AA37C8011DD1E2046951E36CC41B9FB8273AF79C198C4F4EC1CE97C731A15D4",
+      "parts": {
+        "total": "1",
+        "hash": "0EAD2228A6408EFEEC90780227AFFE4A4867B1AFBA0596E9BFA730C0A8D42803"
+      }
+    },
+    "header": {
+      "version": {
+        "block": "10",
+        "app": "0"
+      },
+      "chain_id": "testchain",
+      "height": "3361",
+      "time": "2019-09-20T07:22:19.206881171Z",
+      "num_txs": "0",
+      "total_txs": "9",
+      "last_block_id": {
+        "hash": "FE0AB858A88142C5D21929B30ABCB3307225971F4961743D4ABA9AF11765662C",
+        "parts": {
+          "total": "1",
+          "hash": "9DD6A664DCF9E527DF720576FC7D2B4249F0EC9E34E54957DFCC487027B947EE"
+        }
+      },
+      "last_commit_hash": "D15156E590D6C89A8782E32A5EA13889D3724B437F385D2CA5A9EBDFBA9DC462",
+      "data_hash": "",
+      "validators_hash": "ED2CBAD61C7D2DFD336FF8A49892D9E73F9FE6539B704427C33B4CF1041F72C7",
+      "next_validators_hash": "ED2CBAD61C7D2DFD336FF8A49892D9E73F9FE6539B704427C33B4CF1041F72C7",
+      "consensus_hash": "048091BC7DDC283F77BFBF91D73C44DA58C3DF8A9CBC867405D8B7F3DAADA22F",
+      "app_hash": "5AC57573161FFF216B79A4805BF8454C969DCA8A2DCC1498BD44E343C238B306",
+      "last_results_hash": "",
+      "evidence_hash": "",
+      "proposer_address": "390949686A41E0B186AE52A47732F33B5DE88D3A"
+    }
+  },
+  "block": {
+    "header": {
+      "version": {
+        "block": "10",
+        "app": "0"
+      },
+      "chain_id": "testchain",
+      "height": "3361",
+      "time": "2019-09-20T07:22:19.206881171Z",
+      "num_txs": "0",
+      "total_txs": "9",
+      "last_block_id": {
+        "hash": "FE0AB858A88142C5D21929B30ABCB3307225971F4961743D4ABA9AF11765662C",
+        "parts": {
+          "total": "1",
+          "hash": "9DD6A664DCF9E527DF720576FC7D2B4249F0EC9E34E54957DFCC487027B947EE"
+        }
+      },
+      "last_commit_hash": "D15156E590D6C89A8782E32A5EA13889D3724B437F385D2CA5A9EBDFBA9DC462",
+      "data_hash": "",
+      "validators_hash": "ED2CBAD61C7D2DFD336FF8A49892D9E73F9FE6539B704427C33B4CF1041F72C7",
+      "next_validators_hash": "ED2CBAD61C7D2DFD336FF8A49892D9E73F9FE6539B704427C33B4CF1041F72C7",
+      "consensus_hash": "048091BC7DDC283F77BFBF91D73C44DA58C3DF8A9CBC867405D8B7F3DAADA22F",
+      "app_hash": "5AC57573161FFF216B79A4805BF8454C969DCA8A2DCC1498BD44E343C238B306",
+      "last_results_hash": "",
+      "evidence_hash": "",
+      "proposer_address": "390949686A41E0B186AE52A47732F33B5DE88D3A"
+    },
+    "data": {
+      "txs": null
+    },
+    "evidence": {
+      "evidence": null
+    },
+    "last_commit": {
+      "block_id": {
+        "hash": "FE0AB858A88142C5D21929B30ABCB3307225971F4961743D4ABA9AF11765662C",
+        "parts": {
+          "total": "1",
+          "hash": "9DD6A664DCF9E527DF720576FC7D2B4249F0EC9E34E54957DFCC487027B947EE"
+        }
+      },
+      "precommits": [
+        {
+          "type": 2,
+          "height": "3360",
+          "round": "0",
+          "block_id": {
+            "hash": "FE0AB858A88142C5D21929B30ABCB3307225971F4961743D4ABA9AF11765662C",
+            "parts": {
+              "total": "1",
+              "hash": "9DD6A664DCF9E527DF720576FC7D2B4249F0EC9E34E54957DFCC487027B947EE"
+            }
+          },
+          "timestamp": "2019-09-20T07:22:19.206881171Z",
+          "validator_address": "390949686A41E0B186AE52A47732F33B5DE88D3A",
+          "validator_index": "0",
+          "signature": "sk1EPNmmGGd32N8ubhGSgcavd1PbT9dPNONLeaFiLtOkyBBFjp/giN8e0MdLUz1/ciADDRc4Q5e9GZG58XulBw=="
+        }
+      ]
+    }
+  }
+}
+```
+****
 ****
 ####  最新区块明细
 **方法**：    GET   
