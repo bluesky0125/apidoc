@@ -460,14 +460,11 @@ Account #5: {htdf1g9jlhyu07jjm4gfus52l28r29y4m063gmtxcx0}
 **例子 1 转账**：  
 
 ```
-~$curl -X POST "http://localhost:1317/hs/send" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"base_req\": { \"from\": \"htdf1d8walt2k5824v4zxz6wp6n0mk7z6ml7f2mdagn\", \"memo\": \"Sent via Cosmos Voyager \",\"password\": \"12345678\", \"chain_id\": \"testchain\", \"account_number\": \"0\", \"sequence\": \"0\", \"gas\": \"200000\", \"gas_adjustment\": \"1.2\", \"fees\": [ { \"denom\": \"htdf\", \"amount\": \"20\" } ], \"simulate\": false }, \"amount\": [ { \"denom\": \"htdf\", \"amount\": \"10\" } ],\"to\": \"htdf1g9jlhyu07jjm4gfus52l28r29y4m063gmtxcx0\"}"
+~$curl -X POST "http://localhost:1317/hs/send" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"base_req\": { \"from\": \"htdf1r4qym85hmx6ul4tcgcn0xatla86l8ff3uzg5zm\", \"memo\": \"Sent via Cosmos Voyager \",\"password\": \"12345678\", \"chain_id\": \"testchain\", \"account_number\": \"0\", \"sequence\": \"0\", \"gas\": \"0.002\", \"gas_adjustment\": \"1.2\", \"fees\": [ { \"denom\": \"htdf\", \"amount\": \"0.0001\" } ], \"simulate\": false }, \"amount\": [ { \"denom\": \"htdf\", \"amount\": \"0.1\" } ],\"to\": \"htdf1cvkwrsp8nkfevnry93xt2cygtu433q7m6a2hd5\"}"
 ```
 **返回** :
 ```
-{
-  "height": "0",
-  "txhash": "30B2D681459610E7BDA731B1009FAFDF5D3080D9E94D15AE245C3A71A7039075"
-}
+{"height":"0","txhash":"0B1B5197C0FAE0C7E0FE12C8767EF4501576E65E2D24B5D813DBDD829FA442E8"}
 ```
 **例子 2 智能合约**：  
 
