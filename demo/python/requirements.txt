@@ -9,7 +9,7 @@ coincurve==11.0.0
 colorama==0.4.1
 configparser==3.7.4
 DBUtils==1.2
-ecdsa==0.13
+ecdsa==0.13.3
 enum34==1.1.6
 eth-hash==0.1.1
 futures==3.2.0
