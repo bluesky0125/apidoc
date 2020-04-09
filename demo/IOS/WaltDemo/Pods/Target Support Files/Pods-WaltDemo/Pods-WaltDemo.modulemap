@@ -1,6 +1,0 @@
-framework module Pods_WaltDemo {
-  umbrella header "Pods-WaltDemo-umbrella.h"
-
-  export *
-  module * { export * }
-}
